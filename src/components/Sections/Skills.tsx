@@ -1,15 +1,3 @@
-interface Skill {
-  name: string;
-  percentage: number;
-}
-
-interface SkillCategory {
-  title: string;
-  icon: string;
-  color: string;
-  skills: Skill[];
-}
-
 const Skills = () => (
   <section id="skills" className="py-20 bg-gray-800">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
