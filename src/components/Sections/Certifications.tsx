@@ -10,6 +10,14 @@ interface Certification {
 const Certifications = () => {
   const certifications: Certification[] = [
     {
+        icon: "circle-nodes",
+        iconClass: "fas",
+        color: "cyan",
+        title: "Neo4j Certified Professional",
+        provider: "Neo4j GraphAcademy",
+        description: "Professional certification in graph databases, Cypher query language, and Neo4j database administration."
+    },
+    {
       icon: "google",
       color: "blue",
       title: "Google IT Automation with Python",
@@ -22,14 +30,6 @@ const Certifications = () => {
         title: "Google Data Analytics",
         provider: "Coursera",
         description: "Comprehensive program covering data cleaning, analysis, visualization, and tools like SQL, R, and Tableau."
-    },
-    {
-        icon: "circle-nodes",
-        iconClass: "fas",
-        color: "cyan",
-        title: "Neo4j Certified Professional",
-        provider: "Neo4j GraphAcademy",
-        description: "Professional certification in graph databases, Cypher query language, and Neo4j database administration."
     },
   ]
 
