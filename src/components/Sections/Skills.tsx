@@ -216,6 +216,10 @@ const Skills = () => (
           <span className="text-sm">LangGraph</span>
         </div>
         <div className="bg-gray-700 rounded-lg p-4 flex flex-col items-center hover:bg-gray-600 transition duration-300">
+          <i className="fas fa-plug text-3xl text-teal-300 mb-2"></i>
+          <span className="text-sm">MCP</span>
+        </div>
+        <div className="bg-gray-700 rounded-lg p-4 flex flex-col items-center hover:bg-gray-600 transition duration-300">
           <i className="fas fa-users text-3xl text-red-400 mb-2"></i>
           <span className="text-sm">CrewAI</span>
         </div>
