@@ -11,6 +11,53 @@ const Projects = () => {
   // Combine all projects into a single array
   const projects: Project[] = [
     {
+      icon: "chart-line",
+      iconColor: "blue",
+      title: "StockSage - AI Multi-Agent Financial Intelligence System ⭐",
+      description:
+        "Professional-grade AI-powered multi-agent system built with Google's Agent Development Kit (ADK) and FastAPI for comprehensive financial market analysis and web intelligence. Features LLM-driven coordinator, financial data analysis via Alpha Vantage MCP (stocks, forex, crypto), web intelligence with Google Custom Search, and production-ready REST API.",
+      technologies: [
+        "Google ADK",
+        "FastAPI",
+        "Alpha Vantage MCP",
+        "Multi-Agent",
+        "RAG",
+        "Gemini 2.5 Flash"
+      ],
+      borderColor: "blue"
+    },
+    {
+      icon: "lock",
+      iconColor: "pink",
+      title: "VaultShare - Secure File Sharing Platform",
+      description:
+        "Engineered a secure file-sharing platform with enterprise-grade security features including client-side AES-128 encryption, PBKDF2 key derivation for enhanced security, JWT-based session control and OTP verification, file versioning and encrypted previews. Containerized deployment with Docker.",
+      technologies: [
+        "Django",
+        "React",
+        "AES-128",
+        "PBKDF2",
+        "JWT",
+        "Docker"
+      ],
+      borderColor: "pink"
+    },
+    {
+      icon: "car",
+      iconColor: "red",
+      title: "Driver Drowsiness Detection System",
+      description:
+        "Real-time drowsiness detection system leveraging facial landmarks (EAR, MAR, FAR) via DLIB to monitor driver alertness. Integrated audio alerts for drowsiness detection, automated dataset generation for validation, and web interface using Flask. Designed for potential in-vehicle deployment.",
+      technologies: [
+        "OpenCV",
+        "DLIB",
+        "Flask",
+        "Python",
+        "Computer Vision"
+      ],
+      borderColor: "red"
+    },
+    {
       icon: "robot",
       iconColor: "blue",
       title: "LLM-powered Assistant",
@@ -53,37 +100,9 @@ const Projects = () => {
       borderColor: "yellow"
     },
     {
-      icon: "car",
-      iconColor: "red",
-      title: "Driver Drowsiness Detection",
-      description:
-        "Used OpenCV, DLIB, and Flask to build a system that detects drowsiness using facial landmarks like EAR, MAR, and FAR. Integrated live alerts and automated data generation.",
-      technologies: [
-        "OpenCV",
-        "DLIB",
-        "Flask",
-        "Computer Vision"
-      ],
-      borderColor: "red"
-    },
-    {
-      icon: "lock",
-      iconColor: "pink",
-      title: "VaultShare – Secure File Sharing",
-      description:
-        "Developed a secure platform with AES-128 encryption, PBKDF2 key derivation, and file preview using Django, Docker, React, and JWT. Added features like OTP verification and file versioning.",
-      technologies: [
-        "Django",
-        "React",
-        "Cryptography",
-        "Docker"
-      ],
-      borderColor: "pink"
-    },
-    {
       icon: "eye",
       iconColor: "red",
-      title: "CognitiveEye",
+      title: "CognitiveEye - Real-time Surveillance System",
       description:
         "Developed a real-time surveillance system using OpenCV and YOLO to monitor live camera feeds. The system detects changes frame-by-frame, identifies objects, and raises alerts for unwanted or suspicious activities.",
       technologies: [
