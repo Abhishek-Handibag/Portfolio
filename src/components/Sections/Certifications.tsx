@@ -1,5 +1,6 @@
 interface Certification {
   icon: string;
+  iconClass?: string;
   color: string;
   title: string;
   provider: string;
@@ -22,6 +23,14 @@ const Certifications = () => {
         provider: "Coursera",
         description: "Comprehensive program covering data cleaning, analysis, visualization, and tools like SQL, R, and Tableau."
     },
+    {
+        icon: "circle-nodes",
+        iconClass: "fas",
+        color: "cyan",
+        title: "Neo4j Certified Professional",
+        provider: "Neo4j GraphAcademy",
+        description: "Professional certification in graph databases, Cypher query language, and Neo4j database administration."
+    },
   ]
 
   return (
@@ -41,11 +50,11 @@ const Certifications = () => {
   )
 }
 
-const CertificationCard = ({ icon, color, title, provider, description }: Certification) => (
+const CertificationCard = ({ icon, iconClass = "fab", color, title, provider, description }: Certification) => (
   <div className={`bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-${color}-400 transition duration-300 card-hover`}>
     <div className="flex items-start">
       <div className={`mr-4 text-${color}-400`}>
-        <i className={`fab fa-${icon} text-4xl`}></i>
+        <i className={`${iconClass} fa-${icon} text-4xl`}></i>
       </div>
       <div>
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
